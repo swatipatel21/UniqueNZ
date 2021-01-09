@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    <!--===============================================================================================-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/Images/favicon.png" />
+    <!--===============================================================================================-->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!--===============================================================================================-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!--===============================================================================================-->
+    <link href="~/Content/themify-icons.css" rel="stylesheet" type="text/css" />
+    <!--===============================================================================================-->
+    <link href="~/Content/animate.css" rel="stylesheet" type="text/css" />
+    <!--===============================================================================================-->
+    <link href="~/Content/hamburgers.min.css" rel="stylesheet" type="text/css" />
+    <!--===============================================================================================-->
+    <link href="~/Content/animsition.min.css" rel="stylesheet" type="text/css" />
+    <!--===============================================================================================-->
+    <link href="~/Content/select2.min.css" rel="stylesheet" type="text/css" />
+    <!--===============================================================================================-->
+    <link href="~/Content/daterangepicker.css" rel="stylesheet" type="text/css" />
+    <!--===============================================================================================-->
+    <link href="~/Content/slick.css" rel="stylesheet" type="text/css" />
+    <!--===============================================================================================-->
+    <link href="~/Content/lightbox.min.css" rel="stylesheet" type="text/css" />
+    <!--===============================================================================================-->
+    <link href="~/Content/util.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/main.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/default.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+    <!--===============================================================================================-->
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div id="header-wrapper">
+        <div id="header" class="container">
+            <div id="logo" class="logo">
+                <a href="#"><img src="~/Images/logo final.png" alt="IMG-LOGO" @*data-logofixed="~/Images/logo2.png"*@></a>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li class="current_page_item"><a  href="#" accesskey="3" title=""> @Html.ActionLink("Home", "Index")</a></li>
+                    @*<li><a href="#" accesskey="2" title=""> @Html.ActionLink("About", "About")</a></li>
+                    <li><a href="#" accesskey="3" title="">  @Html.ActionLink("Contact", "Contact")</a></li>*@
+                    
+
+                </ul>
+            </div>
+        </div>
+   
+        <div style="height: 30em;background-position: center;background-size: cover;"> <img src="~/Images/UNZBanner7.jpg"/></div>
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            @*<p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>*@
+        </footer>
+    </div>
+    </div>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/jquery-3.2.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/popper.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/moment.min.js"></script>
+    <script src="~/Scripts/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/slick.min.js"></script>
+    <script src="~/Scripts/slick-custom.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/parallax100.js"></script>
+    <script type="text/javascript">
+        $('.parallax100').parallax100();
+    </script>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/lightbox.min.js"></script>
+
+    <!--===============================================================================================-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+    <script src="~/Scripts/map-custom.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/isotope.pkgd.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/main.js"></script>
+    <!--===============================================================================================-->
+
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <!--===============================================================================================-->
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
